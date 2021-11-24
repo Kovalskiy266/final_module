@@ -1,0 +1,7 @@
+koval.table:
+  path: '/koval/table'
+  defaults:
+    _form: 'Drupal\koval\Form\TableKovalForm'
+    _title: 'Table Form'
+  requirements:
+    _permission: 'access content'

@@ -1,0 +1,9 @@
+.form-number {
+  text-align: center;
+  -moz-appearance: textfield;
+  width: 50px;
+}
+.form-number::-webkit-outer-spin-button,
+.form-number::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}

@@ -1,0 +1,5 @@
+name: "koval"
+description: "This module creates a table"
+type: module
+package: Custom
+core_version_requirement: ^8.8 || ^9
