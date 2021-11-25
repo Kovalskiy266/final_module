@@ -65,7 +65,7 @@ class TableKovalForm extends FormBase {
 
     $form['add_row'] = [
       '#type' => 'submit',
-      '#value' => $this->t('Add row'),
+      '#value' => $this->t('Add Year'),
       '#submit' => [
         '::addNewRow',
       ],
