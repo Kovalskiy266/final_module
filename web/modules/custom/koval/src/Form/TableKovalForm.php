@@ -90,6 +90,8 @@ class TableKovalForm extends FormBase {
 
   /**
    * A function that returns a table header.
+   *
+   * return @array
    */
   public function headerConstruction() {
     $header = [
@@ -289,6 +291,7 @@ class TableKovalForm extends FormBase {
         }
       }
 
+      // If the starting point exists.
       if ($start_cell !== NULL) {
         // We go through the cells until the cell is empty.
         for ($filled_cell = $start_cell; $filled_cell < count($values) + 1; $filled_cell++) {
@@ -301,6 +304,7 @@ class TableKovalForm extends FormBase {
         }
       }
 
+      // If the endpoint exists.
       if ($finish_cell !== NULL) {
         // We go through the cells after the end point.
         for ($empty_cell = $finish_cell; $empty_cell < count($values) + 1; $empty_cell++) {
