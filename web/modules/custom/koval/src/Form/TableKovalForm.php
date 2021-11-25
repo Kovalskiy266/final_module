@@ -90,8 +90,6 @@ class TableKovalForm extends FormBase {
 
   /**
    * A function that returns a table header.
-   *
-   * return @array
    */
   public function headerConstruction() {
     $header = [
