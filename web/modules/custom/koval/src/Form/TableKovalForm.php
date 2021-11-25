@@ -291,7 +291,7 @@ class TableKovalForm extends FormBase {
 
       if ($start_cell !== NULL) {
         // We go through the cells until the cell is empty.
-        for ($filled_cell = $start_cell; $filled_cell < count($values); $filled_cell++) {
+        for ($filled_cell = $start_cell; $filled_cell < count($values) + 1; $filled_cell++) {
           // If the cell is empty,
           // then it is the end point at which the non-empty fields end.
           if (empty($values[$filled_cell])) {
@@ -303,7 +303,7 @@ class TableKovalForm extends FormBase {
 
       if ($finish_cell !== NULL) {
         // We go through the cells after the end point.
-        for ($empty_cell = $finish_cell; $empty_cell < count($values); $empty_cell++) {
+        for ($empty_cell = $finish_cell; $empty_cell < count($values) + 1; $empty_cell++) {
           // If the cell is not empty, the table is not valid.
           if (!empty($values[$empty_cell])) {
             $form_state->setError($form[$i], 'Invalid');
